@@ -76,8 +76,8 @@ These are the meaningful targets for this build file:
 
     <property name="compile.debug"       value="true" />
     <property name="compile.optimize"    value="true" />
-    <property name="compile.target"      value="1.2" />
-    <property name="compile.source"      value="1.2" />
+    <property name="compile.target"      value="1.8" />
+    <property name="compile.source"      value="1.8" />
     <property name="compile.deprecation" value="true" />
 
     <property name="src.dir" value="./src/java"/>

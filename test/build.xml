@@ -80,8 +80,8 @@ These are the meaningful targets for this build file:
 
     <property name="compile.debug"       value="true" />
     <property name="compile.optimize"    value="true" />
-    <property name="compile.target"      value="1.5" />
-    <property name="compile.source"      value="1.5" />
+    <property name="compile.target"      value="1.8" />
+    <property name="compile.source"      value="1.8" />
     <property name="compile.deprecation" value="false" />
 
     <property name="src.dir" value="./src/java"/>
@@ -103,10 +103,11 @@ These are the meaningful targets for this build file:
     <filter token="verbose" value="true"/>
 
     <!-- Default JAR libraries -->
-    <property name="xml-apis.jar"       value="${jdom.lib.dir}/xml-apis.jar"/>
-    <property name="parser.jar"         value="${jdom.lib.dir}/xerces.jar"/>
-    <property name="jdom-core.jar"      value="${jdom.build.dir}/jdom-${version}.jar"/>
-    <property name="junit.jar"          value="${lib.dir}/junit.jar"/>
+    <property name="xml-apis.jar"                 value="${jdom.lib.dir}/xml-apis.jar"/>
+    <property name="parser.jar"                   value="${jdom.lib.dir}/xerces.jar"/>
+    <property name="jdom-core.jar"                value="${jdom.build.dir}/jdom-${version}.jar"/>
+    <property name="junit.jar"                    value="${lib.dir}/junit.jar"/>
+    <property name="glassfish-corba-omgapi.jar"   value="${lib.dir}/glassfish-corba-omgapi.jar"/>
 
     <!-- Compilation class path -->
     <path id="compile.class.path">
@@ -114,6 +115,7 @@ These are the meaningful targets for this build file:
       <pathelement location="${parser.jar}"/>
       <pathelement location="${jdom-core.jar}"/>
       <pathelement location="${junit.jar}"/>
+      <pathelement location="${glassfish-corba-omgapi.jar}"/>
 
       <!-- We used to include the CLASSPATH environment variable in
            compilation path as it might contain the path to the JDK 1.1
